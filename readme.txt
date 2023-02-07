@@ -1,0 +1,1 @@
+Implementação da interface gráfica do sistema IBET utilizando o framework react
