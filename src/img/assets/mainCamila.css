@@ -1,0 +1,20 @@
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: #E5E5E5;
+
+}
+
+.material-icons.mainYellow{
+    color: #F4CA01;
+}
+
+.material-icons.threeSixDp{
+    font-size: 36px;
+}

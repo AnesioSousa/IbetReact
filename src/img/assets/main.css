@@ -1,0 +1,122 @@
+#app {
+    margin: 0 auto;
+    font-weight: normal;
+  }
+  a {
+  text-decoration: none;
+}
+.btn {
+    border-radius: 3px;
+    background-color: #F4CA01;
+    border: #F4CA01;
+    padding: 0.3rem;
+  }
+body {
+    margin: auto 0;
+    padding: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    
+    
+  }
+  @keyframes barAnimation {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(100%); }
+  }
+  @keyframes barAnimationReverse {
+    0% {  width: 5vw;}
+    50% {    }
+    100% {  }
+  }
+  @keyframes transparencyAnimation {
+    from {
+      -webkit-backdrop-filter: blur(0px);
+      backdrop-filter: blur(0px);
+    }
+    to {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }
+  @keyframes leftArrowAnimation {
+    0% {}
+
+    50% {}
+
+    100% {
+        transform: translateX(-40%);
+    }
+}
+@keyframes leftArrowAnimationActive {
+  0% {}
+
+  50% {}
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+@media (max-width: 650px) {
+  @keyframes leftArrowAnimationActive {
+    0% {}
+  
+    50% {}
+  
+    100% {
+        transform: translateX(-55%);
+    }
+  }
+
+}
+@media (max-width: 450px) {
+  @keyframes leftArrowAnimationActive {
+    0% {}
+  
+    50% {}
+  
+    100% {
+        transform: translateX(-40%);
+    }
+  }
+
+}
+  .transparency {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 55, 78, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 0;
+    font-weight: bold;
+   /* animation-name: transparencyAnimation;
+    animation-duration: 0.2s;*/
+  }
+  #popUp {
+    display: none;
+  }
+
+@media (hover: hover) {
+  
+}
+
+@media (min-width: 1024px) {
+  body {
+    
+   
+   
+  }
+
+  #app {
+    
+    
+    
+  }
+}

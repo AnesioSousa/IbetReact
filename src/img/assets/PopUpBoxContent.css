@@ -1,0 +1,119 @@
+
+.loginBoxBody {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    padding: 0;
+    align-content: center;
+}
+.text,
+.password {
+    top: 2vh;
+    position: relative;
+    height: 8%;
+    width: 70%;
+    left: 15%;
+    padding: 0;
+    margin-top: 25px;
+    background-color: #313139;
+    border: 1px solid #313139;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    text-align: center;
+}
+
+.text:focus,
+.password:focus {
+    border: 1px solid #F4CA01;
+}
+
+.text {}
+
+.btn {
+    top: 2vh;
+    position: relative;
+    height: 10%;
+    width: 40%;
+    left: 30%;
+    margin-top: 35px;
+
+}
+
+.redefinirSenha {
+    top: 2vh;
+    width: 40%;
+    left: 30%;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+.link {
+    color: #F4CA01;
+    font-size: 14px;
+    text-decoration-color: #F4CA01;
+    text-decoration-line: underline;
+}
+
+.lembrarDeMim {
+    top: 1vh;
+    width: 60%;
+    left: 10%;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    text-align: left;
+
+}
+
+#lembrar {
+    color: white;
+    font-size: 11px;
+}
+
+.lembrarDeMim input[type='checkbox'] {
+    accent-color: #F4CA01;
+}
+
+@media (max-width: 700px) {
+    
+    .btn {
+        top: 7vh;
+        margin-top: 25px;
+        font-size: 11px;
+    }
+
+    .redefinirSenha {
+        top: 7vh;
+        margin-top: 15px;
+    }
+
+    .link {
+        font-size: 8px;
+    }
+
+    .lembrarDeMim {
+        top: 7vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .loginBoxBody {
+        height: 85%;
+    }
+    
+    .text,
+    .password {
+        height: 9%;
+    }
+
+    .btn {
+        height: 10%;
+    }
+
+    .lembrarDeMim {
+        top: 4vh;
+    }
+}
