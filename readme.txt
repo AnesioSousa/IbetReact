@@ -2,5 +2,7 @@ Repository that is used to maintain the graphical interface files of the IBET be
 
 
 Type 
-npm i && npm run
-dev to install the dependencies and run the project
+
+npm i && npm run dev 
+
+to install the dependencies and run the project
