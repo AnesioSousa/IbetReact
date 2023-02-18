@@ -1,6 +1,5 @@
 * {
   padding: 0;
-  margin: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
@@ -8,6 +7,18 @@
 html,
 body,
 #root {
-  background-color: #EFEFEF;
+  background-color: #373741;
   height: 100%;
+}
+
+.fixed_top {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+}
+
+.sticky-lg-top {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
