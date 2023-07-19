@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Requisição à API</title>
+    <script>
+        // Função para fazer a requisição à API
+        function fazerRequisicao() {
+            // Obtendo o número inserido pelo usuário
+            let numero = document.getElementById('numero').value;
+
+            // URL da API com o parâmetro do número
+            let url = `https://exemplo.com/api?numero=${numero}`;
+
+            // Fazendo a requisição usando o método fetch
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Manipulando a resposta da API
+                    console.log(data);
+                    // Aqui você pode fazer o que desejar com os dados retornados pela API
+                })
+                .catch(error => {
+                    // Lidando com erros de requisição
+                    console.log('Ocorreu um erro:', error);
+                });
+        }
+    </script>
+</head>
+<style>
+    #teste {
+        color: red;
+    }
+</style>
+
+<body>
+    <h1>Requisição à API</h1>
+    <label id="teste" for="numero">Número:</label>
+    <input type="text" id="numero" name="numero">
+    <button onclick="fazerRequisicao()">Enviar</button>
+</body>
+
+</html>

@@ -8,15 +8,16 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <Container>
-                <Link to='/'>
-                    <img src={logo} alt="Ibet" style={styles.logo} />
-                </Link>
+                <Link to="/"><img src={logo} alt="Ibet" style={styles.logo} width="100px" height={"50.36px"} /></Link>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <Link to="/">Home</Link>
+                        <Link to="/adverts">Anúncios</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/wallet">Carteira</Link>
+                        <Link to="/newMatch">Nova partida</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to="/teams">Times</Link>
                     </li>
                     <li className={styles.item}>
                         <Link to="/mydata">Meus Dados</Link>
