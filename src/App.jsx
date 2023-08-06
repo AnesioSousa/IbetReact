@@ -1,11 +1,12 @@
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom"
-import Container from "./components/layout/Container"
-import Footer from './components/layout/Footer'
-import Navbar from './components/layout/Navbar'
-import Adverts from './components/pages/Adverts'
-import MyData from './components/pages/MyData'
-import NewMatchFrame from './components/pages/NewMatch'
-import Teams from './components/pages/Teams'
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Container from "./components/layout/Container";
+import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
+import Adverts from "./components/pages/Adverts";
+import MyData from "./components/pages/MyData";
+import NewMatchFrame from "./components/pages/NewMatch";
+import Teams from "./components/pages/Teams";
+import "./scss/main.scss";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       </Container>
       <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

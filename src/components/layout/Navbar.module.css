@@ -1,8 +1,7 @@
 .navbar {
-    /*display: flex;
-    justify-content: space-between;*/
-    background-color: #2F2F39;
-    padding: 0.8em;
+    background-color: #39393F;
+    padding: .2em;
+    border: 2px solid #151516;
 }
 
 .list {
@@ -25,6 +24,11 @@
 .item a:hover {
     background-color: #2B2B33;
     display: block;
-    height: 1px;
-    border-bottom: solid 2px #F4CA01;
+    height: 30px;
+    border: solid 2px #F4CA01;
+}
+
+.navbarlogo {
+    width: 100px;
+    height: 50.36px;
 }

@@ -1,0 +1,7 @@
+.container {
+    color: hsl(300, 50%, 25%);
+}
+
+.container child{
+    color: hsl(120, 50%, 25%);
+}
