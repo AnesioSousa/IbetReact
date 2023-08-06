@@ -167,9 +167,9 @@ function myFun(a, b, ...manyMoreArgs) {
 
 myFun("one", "two", "three", "four", "five", "six");
 
-function multiply(a, b = 1) {
+/*function multiply(a, b = 1) {
   return a * b;
-}
+}*/
 
 console.log(multiply(5, 2));
 
@@ -191,3 +191,26 @@ function vectorMultiply({ x, y }, scalar) {
 
 //console.log(vectorAdd([1, 2], [3, 4]));
 console.log(vectorMultiply({ x: 1, y: 2 }, 2));
+
+/*function vectorAdd(
+  { x: x1, y: y1 },
+  { x: x2, y: y2 }
+) {
+  return { x: x1 + x2, y: y1 + y2 };
+}
+*/vectorAdd({ x: 1, y: 2 }, { x: 3, y: 4 })
+
+function vectorMultiply({ x, y, z = 0 }, scalar) {
+  return { x: x * scalar, y: y * scalar, z: z * scalar };
+}
+vectorMultiply({ x: 1, y: 2 }, 2);
+
+function arraycopy({ from, to = from, n = from.length,
+  fromIndex = 0, toIndex = 0 }) {
+  let valuesToCopy = from.slice(fromIndex, fromIndex + n);
+  to.splice(toIndex, 0, ...valuesToCopy);
+  return to;
+}
+
+let k = [1, 2, 3, 4, 5], i = [9, 8, 7, 6, 5];
+arraycopy({ from: k, n: 3, to: i, toIndex: 4 })
